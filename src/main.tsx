@@ -7,6 +7,7 @@ import Dashboard from './routes/Dashboard/Dashboard.tsx';
 import HomePage from './routes/HomePage/HomePage.tsx';
 import DataPredictions from './components/DashboardDataPredictions/DashboardDataPredictions.tsx';
 import DashboardLanding from './components/DashboardLanding/DashboardLanding.tsx';
+import ProfilePage from "./routes/ProfilePage/ProfilePage";
 
 const router = createBrowserRouter([
 	{
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
 			{
 				path: 'login',
 				element: <LoginPage />
+			},
+			{
+				path:'profile',
+				element:<ProfilePage />
 			},
 			{
 				path: 'dashboard',
