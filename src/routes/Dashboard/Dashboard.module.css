@@ -29,7 +29,7 @@ body {
 .sidebar {
   display: flex;
   flex-direction: column;
-  background:#124E66;
+  background:#0e080e;
   width: 230px;
   height: calc(100vh - 100px);
   position: fixed;
@@ -90,7 +90,7 @@ body {
 }
 
 .sidebarListItem a:hover, .sidebarListItem a.active, .sidebarBottomLink:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgb(233, 116, 98);
 }
 
 .sidebarSettings {
@@ -123,7 +123,7 @@ body {
 }
 
 .searchIcon {
-  color:white;
+  color:rgb(0, 0, 0);
   position: absolute; /* Absolute position within the container */
   left: 65%; /* Adjust this value to move the icon left or right */
   height: 60%; /* Match height of the container */
@@ -140,12 +140,12 @@ body {
   height: 50px;
   padding: 8px 16px;
   padding-right: 280px;
-  border: 0.01px solid rgba(255, 254, 254, 0.247); /* More distinct border for a clear outline */
+  border: 0.01px solid rgba(0, 0, 0, 0.37); /* More distinct border for a clear outline */
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.144); /* Lighter transparency for a glass effect */
   backdrop-filter: blur(10px); /* Increased blur for a stronger frosted glass effect */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-  color: WHITE; /* White text color */
+  color: rgb(0, 0, 0); /* White text color */
   outline: none;
   font-size: 16px;
 }
@@ -157,13 +157,19 @@ body {
 .bellIcon {
   color: #fff; /* White icon color */
   margin: 40px; /* Space between search bar and bell icon */
+  color: rgb(0, 0, 0) !important; 
+}
+
+.bellIcon {
+  color: #000000; /* White icon color */
+  margin-left: 40px; /* Space between search bar and bell icon */
   font-size: 30px; /* Icon size */
 }
 
 .profileIcon {
-  width: 70px; /* Profile icon size */
+  width: 60px; /* Profile icon size */
   height: 60px; /* Profile icon size */
-  background-color: #fff; /* White background for the icon */
+  background-color: #ffffff; /* White background for the icon */
   border-radius: 50%; /* Makes it circular */
   margin-left: 40px; /* Space between bell icon and profile icon */
   background-image: url('/path/to/your/profile/image.jpg'); /* Path to your profile image */
@@ -176,6 +182,9 @@ body {
   width: calc(100vw - 300px);
   left: 260px;
   top: 5vh;
+  right: 4%;
+  top: 5%;
+  bottom: 5%;
   overflow-y: auto;
   padding: 20px;
   z-index: 500;
@@ -184,7 +193,7 @@ body {
   align-items: flex-start; /* Aligns content to the left */
   background-color: rgba(255, 255, 255, 0.068);  /* Equivalent to #ffffff10 */
   border-radius: 10px;  /* More noticeable curvature */
-  border: 0.1px solid #ffffff52;  /* Specifies style and color together */
+  border: 0.1px solid #00000052;  /* Specifies style and color together */
 }
 
 /* Style for the Dashboard Title */
@@ -192,7 +201,7 @@ body {
   width: 90%; /* Ensures the title spans most of the container width */
   margin-bottom: 10px; /* Space between title and content */
   font-size: 42px; /* Adjust font size as needed */
-  color: WHITE; /* Adjust color as needed */
+  color: rgb(0, 0, 0); /* Adjust color as needed */
   align-self: flex-start; /* Aligns the title to the left */
   padding-left: 20px;
 }
@@ -223,6 +232,8 @@ body {
   flex: 1 1 calc(65% - 20px);
   margin: 10px;
   background-color: #2E3944 ;
+  width: 75%;
+  background-color: #e97462 ;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -256,6 +267,8 @@ body {
   flex: 1 1 calc(50% - 20px);
   margin: 10px;
   background-color: #2E3944;
+  width: 35%;  
+  background-color: #e97462;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -274,6 +287,8 @@ body {
   flex: 1 1 calc(20% - 20px);
   margin: 10px;
   background-color: #2E3944;
+  width: 30%;  
+  background-color: #e97462;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -293,6 +308,8 @@ body {
   flex: 1 1 calc(30% - 20px);
   margin: 10px;
   background-color: #2E3944;
+  width: 15%;  
+  background-color: #e97462;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -311,6 +328,9 @@ body {
   font-size: 18px;
   color: white;
   margin-bottom: 10px;
+  font-size: 18px; 
+  color: rgb(0, 0, 0); 
+  margin-bottom: 10px; 
   margin-top: 20px;
   text-align: center;
 }
@@ -322,6 +342,8 @@ body {
   align-self: center;
   /*width: 50%;*/
   background-color: #2E3944;
+  width: 50%;
+  background-color: #e97462;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -342,6 +364,8 @@ body {
   padding: 20px;
   background-color: #2E3944 ;  /* Light background for the calendar */
   color:white;            /* Dark text for better visibility */
+  background-color: #e97462 ;  /* Light background for the calendar */
+  color:rgb(0, 0, 0);            /* Dark text for better visibility */
   border-radius: 8px;        /* Optional: rounded corners */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Optional: adding some shadow for depth */
   transition: 1s;
@@ -354,7 +378,7 @@ body {
 }
 
 .MuiPickersCalendarHeader-weekDayLabel {
-  color: white !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 
@@ -383,7 +407,7 @@ body {
 }
 
 .SessionsProfileWindow h1{
-  color: white;
+  color: rgb(0, 0, 0);
   margin-bottom: 20px;
 }
 
@@ -399,12 +423,13 @@ body {
 .SessionsProfileWindow tbody{
   background:#748D92  ;
   color: #f6cefc;
-
+  background:#e97462d8  ;
+  color: #000000;
 }
 
 .SessionsProfileWindow td{
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: 500;
   width: 125%;
   font-size: 17px;
@@ -428,7 +453,7 @@ body {
 
 }
 .PerformanceTipsWindow h1{
-  color: white;
+  color: rgb(0, 0, 0);
   margin-bottom: 20px;
 }
 
